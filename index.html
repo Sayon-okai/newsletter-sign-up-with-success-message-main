@@ -16,7 +16,7 @@
 <body>
 
   <!-- Sign-up form start -->
-<section class="sign-up-screen active">
+<section class="sign-up-screen active hidden">
   
   <!-- Main-content -- left block -->
     <div class="main-content">
@@ -30,7 +30,15 @@
         </ul>
     
         <form action="">
-       <label for="email">Email address</label>
+       <div class="label-err">
+        <label for="email">Email address</label>
+         <span class="error-msg">
+            <!-- 
+                 error message:
+                 ToDO: Dynamic content JS
+            -->
+         </span>
+      </div>
       <input type="email" id="email" placeholder="  email@company.com">
         
          </form>
@@ -46,12 +54,14 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-<section class="success-screen hidden">
-  
-    <h1 class="main-text">Thanks for subscribing!</h1>
+<section class="success-screen ">
+  <img src="./assets/images/icon-success.svg" alt="success icon" class="success-icon">
+    <h1 class="success-title">Thanks for subscribing!</h1>
   
     <p>
-      A confirmation email has been sent to <span class="visitor-email">ash@loremcompany.com.</span>
+      A confirmation email has been sent to <span class="visitor-email">[visitor's email]
+          <!-- ToDO: Dynamic content JS  -->
+      </span>
       Please open it and click the button inside to confirm your subscription.
     </p>
   
