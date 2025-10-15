@@ -17,31 +17,39 @@
 <body>
 
   <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
+<section class="sign-up-screen active">
+  
+    <h1 class="main-text">Stay updated!</h1>
+  
+    <h3>Join 60,000+ product managers receiving monthly updates on:</h3>
+  
+    <p>
+      Product discovery and building what matters
+      Measuring to ensure updates are a success
+      And much more!
+    </p>
+  <form action="">
+     <label for="email">Email address</label>
+    <input type="email" id="email" placeholder="  email@company.com">
+  
+   </form>
+    <button type="submit">Subscribe to monthly newsletter</button>
+</section>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+<section class="success-screen hidden">
+  
+    <h1 class="main-text">Thanks for subscribing!</h1>
+  
+    <p>
+      A confirmation email has been sent to <span class="visitor-email">ash@loremcompany.com.</span>
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+  
+    <button type="button" id="dismiss-msg">Dismiss message</button>
+</section>
   <!-- Success message end -->
   
   <div class="attribution">
