@@ -1,0 +1,129 @@
+  @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+  
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+  
+  body {
+          background: hsl(235, 18%, 26%);
+  }
+
+  .attribution {
+       font-size: 11px;
+       text-align: center;
+   }
+
+   .attribution a {
+       color: hsl(228, 45%, 44%);
+   }
+
+   /* main-text */
+   .main-text {
+     font-family: 'Roboto', sans-serif;
+     font-size: 2.5rem;
+     color: hsl(234, 29%, 20%);
+     margin: 20% 0 0 0;
+    
+     
+   }
+
+   /* paragraph */
+   p {
+       width: 100%;
+       font-family: 'Roboto', sans-serif;
+       font-size: 16px;
+       font-weight: 300;
+        color: hsl(235, 18%, 26%);
+   }
+
+   /* list */
+
+   ul li {
+    list-style: none;
+    background-image: url("../assets/images/icon-list.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    /* adjust icon size */
+    background-position: 0 5px;
+    /* adjust vertical alignment */
+    padding: 0 0 10px 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+     color: hsl(235, 18%, 26%);
+        
+
+   }
+
+   /* label */
+   label {
+       display: block;
+       margin-bottom: 10px;
+   }
+
+   /* input */ 
+   input {
+      width: 100%;
+      height: 50px;
+        border: 1px solid hsl(0, 0%, 58%);
+      border-radius: 10px;
+   }
+
+   /* button */
+   button {
+       width: 100%;
+       height: 50px;
+       border: none;
+       border-radius: 10px;
+       background: hsl(234, 29%, 20%);
+       color: hsl(0, 0%, 100%);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+       
+   }
+
+   /* sign-up-screen */
+   .sign-up-screen {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: auto;
+       justify-self: center;
+       grid-column-gap: 10px;
+       background: hsl(0, 0%, 100%);
+       margin: 8% 0 10% 0;
+       padding: 10px;
+       border-radius: 30px;
+       
+   }
+
+   /* main-content */
+   .main-content {
+       /* margin: 0 0 0 40px; */
+        display: inline-flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10% 10% 10%;
+       
+        
+
+   }
+
+
+
+   /* Banner */
+   .banner {
+        /* width: 500px;
+        height: 450px;
+    */
+
+    margin-left: 40px;
+      
+   }
+
+   /* Hidden */
+
+   .hidden {
+        display: none;
+   }
