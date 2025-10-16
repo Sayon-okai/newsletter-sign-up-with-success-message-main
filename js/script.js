@@ -19,6 +19,7 @@ subscribeButton.addEventListener("click", function () {
          // Update views 
         signUpScreen.classList.add("hidden");
         successScreen.classList.remove("hidden");
+        $(".attribution").addClass("hidden")
         successEmail.textContent = newsletterEmail.value;
        
     } else if (newsletterEmail.value === "") {
