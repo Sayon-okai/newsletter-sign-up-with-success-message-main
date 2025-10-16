@@ -81,6 +81,13 @@
         font-weight: 700;
         color: hsl(4, 100%, 67%);
    }
+   /* valid-msg */
+   .valid-msg {
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        color: hsl(133, 100%, 50%);
+   }
 
    /* input */ 
    #email {
