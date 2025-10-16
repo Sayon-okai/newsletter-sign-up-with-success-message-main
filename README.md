@@ -13,7 +13,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -60,7 +59,7 @@ Was able to enhance my computational thinking skills
 
 
 ```js
-// validate on keypress
+// validate input and update content
 document.addEventListener("input", function () {
     if (validateEmail(newsletterEmail.value)) {
         newsletterEmail.addEventListener("keypress", function () {
@@ -68,13 +67,17 @@ document.addEventListener("input", function () {
             if (validateEmail(newsletterEmail.value)) {
                      validationMessage.classList.add("valid-msg");
                      validationMessage.textContent = "Valid email";
-                     validationMessage.classList.remove("error-msg");
+                validationMessage.classList.remove("error-msg");
+                newsletterEmail.classList.remove("input-err");
+                    newsletterEmail.classList.add("input-success");
             }
             
             else {
                      validationMessage.classList.remove("valid-msg");
                      validationMessage.textContent = "Invalid email";
-                     validationMessage.classList.add("error-msg");
+                  validationMessage.classList.add("error-msg");
+                   newsletterEmail.classList.remove("input-success");
+                   newsletterEmail.classList.add("input-err");
             }
         })
  
@@ -84,6 +87,7 @@ document.addEventListener("input", function () {
               
        
     } 
+    
     
 })
 

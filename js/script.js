@@ -94,7 +94,10 @@ function validateEmail(email) {
 function resetViews() {
       // Update views TODO: remove success screen
         signUpScreen.classList.remove("hidden");
-        successScreen.classList.add("hidden");
+    successScreen.classList.add("hidden");
+    
+    location.reload();
+    
 
         // Clear input field value
     newsletterEmail.value = "";
