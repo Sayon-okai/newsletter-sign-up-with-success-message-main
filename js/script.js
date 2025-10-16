@@ -10,6 +10,21 @@ let successScreen = document.querySelector(".success-screen");
 
 subscribeButton.addEventListener("click", function () {
  
+    if (validateEmail(newsletterEmail.value)) {
+        alert("email is valid")
+    } else {
+        console.log("Email is invalid")
+    }
+
+   
+
+});
 
 
-})
+
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    return emailRegex.test(email);
+ 
+}
