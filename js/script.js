@@ -26,6 +26,9 @@ subscribeButton.addEventListener("click", function () {
                   validationMessage.textContent = "Valid email required"
                   validationMessage.classList.remove("valid-msg")
                   validationMessage.classList.add("error-msg");
+                   newsletterEmail.classList.remove("input-success");
+                   newsletterEmail.classList.add("input-err");
+        
                       
             }
     
@@ -34,6 +37,10 @@ subscribeButton.addEventListener("click", function () {
                   validationMessage.textContent = "Valid email required"
                   validationMessage.classList.remove("valid-msg")
                   validationMessage.classList.add("error-msg");
+        
+                   newsletterEmail.classList.remove("input-success");
+                   newsletterEmail.classList.add("input-err");
+                  
        
     }
 
@@ -50,13 +57,17 @@ document.addEventListener("input", function () {
             if (validateEmail(newsletterEmail.value)) {
                      validationMessage.classList.add("valid-msg");
                      validationMessage.textContent = "Valid email";
-                     validationMessage.classList.remove("error-msg");
+                validationMessage.classList.remove("error-msg");
+                newsletterEmail.classList.remove("input-err");
+                    newsletterEmail.classList.add("input-success");
             }
             
             else {
                      validationMessage.classList.remove("valid-msg");
                      validationMessage.textContent = "Invalid email";
-                     validationMessage.classList.add("error-msg");
+                  validationMessage.classList.add("error-msg");
+                   newsletterEmail.classList.remove("input-success");
+                   newsletterEmail.classList.add("input-err");
             }
         })
  
